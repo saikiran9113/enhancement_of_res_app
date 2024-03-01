@@ -5,7 +5,7 @@ import {Component} from 'react'
 import CartContext from '../../context/CartContext'
 
 class DishItem extends Component {
-  state = {quantity: 1}
+  state = {quantity: 0}
 
   onClickIncrease = () => {
     this.setState(prev => ({quantity: prev.quantity + 1}))
